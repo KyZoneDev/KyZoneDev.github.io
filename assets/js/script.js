@@ -303,10 +303,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Aggregate ROM datasets
     window.romData = [];
-    if (window.kunziteData) window.romData = window.romData.concat(window.kunziteData);
-    if (window.fogData) window.romData = window.romData.concat(window.fogData);
     if (window.earthData) window.romData = window.romData.concat(window.earthData);
-    if (window.galeData) window.romData = window.romData.concat(window.galeData);
+    
 
     window.romData.forEach(item => {
         if (!item.category) {
