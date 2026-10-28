@@ -304,6 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Aggregate ROM datasets
     window.romData = [];
     if (window.earthData) window.romData = window.romData.concat(window.earthData);
+    if (window.garnetData) window.romData = window.romData.concat(window.garnetData);
     
 
     window.romData.forEach(item => {
